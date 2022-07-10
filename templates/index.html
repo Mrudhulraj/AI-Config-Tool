@@ -11,24 +11,31 @@
 
     <button class="accordion">Actuator Activation</button>
     <div class="panel">
-        <form id="actuator">
-           <label for="length">Blade Length</label>
-           <input type="float" id="Blade Length" value=3.0>
-           
+        <form id="actuator" class="formData">
+            <div class="bladeLength">
+                <label for="length">Blade Length</label>
+           <input type="number" id="Blade Length" value=3.0>
+            </div>
         </form>
     </div>
     <button class="accordion">Calibration</button>
     <div class="panel">
-        <form id="calibration">
-           <label for="pattern">Board Pattern</label>
-           <input type="float" id="Blade Length">
+        <form id="calibration" class="formData">
+            <div class="boardPattern">
+                <label for="pattern">Board Pattern</label>
+                <input type="float" id="Blade Length">
+            </div>
+
             <br>
-           <label for="length">Board Size in sq cm</label>
+
+            <div class="boardSize">
+                <label for="size">Board Size in sq cm</label>
            <input type="float" id="Blade Length">
+            </div>
 
         </form>
     </div>
     
-    <button class="reset">Reset</button>
+    <button class="reset" onclick="reset()">Reset</button>
     <button class="save">Save</button>
 {%endblock%}
