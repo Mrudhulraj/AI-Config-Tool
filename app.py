@@ -1,14 +1,9 @@
 from flask import Flask, render_template, url_for
-from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///config.db'
 
 
-db = SQLAlchemy(app)
-
-
-@app.route('/')
+@app.route('/config')
 def index():
     return render_template('index.html')
 
