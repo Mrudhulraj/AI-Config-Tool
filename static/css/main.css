@@ -1,9 +1,13 @@
 body{
-    margin: 0;
-    text-align: center;
+    margin: 50;
     font-family: sans-serif;
 }
 
+.header{
+    text-align: center;
+    font-size: 30px;
+    background: #1abc9c;
+}
 .accordion {
 background-color: #eee;
 color: #444;
@@ -39,4 +43,11 @@ background-color: white;
 max-height: 0;
 overflow: hidden;
 transition: max-height 0.2s ease-out;
+}
+
+#actuator, #calibration{
+    text-align: center;
+}
+.reset,.save{
+float: right;
 }
