@@ -45,7 +45,7 @@ overflow: hidden;
 transition: max-height 0.2s ease-out;
 }
 
-#actuator, #calibration{
+#actuator, #calibration, #detection{
     text-align: center;
     padding: 3rem;
     margin-inline: auto;
@@ -106,6 +106,70 @@ float: right;
 }
 
 .boardSize > input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.detection {
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.detection > label {
+    width: 100%;
+    text-align: left;
+}
+
+.detection > input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.tracking {
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.tracking > label {
+    width: 100%;
+    text-align: left;
+}
+
+.tracking > input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.weed {
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.weed > label {
+    width: 100%;
+    text-align: left;
+}
+
+.weed > input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.actuation {
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.actuation > label {
+    width: 100%;
+    text-align: left;
+}
+
+.actuation > input {
     width: 100%;
     padding: 0.5rem;
     border-radius: 10px;

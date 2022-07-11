@@ -31,9 +31,72 @@
             accordianfun);
         }
 
-        function reset(){
-            let api_call= 3.0;
-            document.getElementById('Blade Length').value=api_call;
+        async function reset(){
+            const api_call= await fetch('http://localhost:5000/getDefault');
+            const final_json= await api_call.json();
+            var els=document.getElementsByClassName('Blade Length');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.blade_length;
+            }
+            var els=document.getElementsByClassName('bbsize');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.thin_bb_size_in_m;
+            }
+            var els=document.getElementsByClassName('Board Pattern')
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.thin_bb_size_in_m;
+            }
+            var els=document.getElementsByClassName('Board Size');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.board_square_size_in_cm;
+            }
+            var els=document.getElementsByClassName('Conf Threshold');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.conf_threshold;
+            }
+            var els=document.getElementsByClassName('Dist Threshold');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.distance_threshold;
+            }
+            var els=document.getElementsByClassName('Prediction buffer');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.prediction_buffer_pix;
+            }
+            var els=document.getElementsByClassName('Frames');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.tracking_frames_length;
+            }
+            var els=document.getElementsByClassName('CD');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.cd_error;
+            }
+            var els=document.getElementsByClassName('SE');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.se_error;
+            }
+            var els=document.getElementsByClassName('spraying');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.spraying_error;
+            }
+            var els=document.getElementsByClassName('FD');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.fd_frames_to_consider;
+            }
+            var els=document.getElementsByClassName('CT');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.ct_frames_to_consider;
+            }
+            var els=document.getElementsByClassName('Shift');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.max_implement_shift;
+            }
+            var els=document.getElementsByClassName('Actuation Implement');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.ia_buffer;
+            }
+        }
+        async function save() {
+            
         }
     </script>
 </body>

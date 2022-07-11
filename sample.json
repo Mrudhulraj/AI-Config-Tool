@@ -1,0 +1,357 @@
+{
+    "actuator_activation_left": {
+        "blade_length": {
+            "display": "Blade Length",
+            "precedence": "local",
+            "type": "float",
+            "value": 0.177
+        },
+        "thin_bb_size_in_m": {
+            "display": "Thin BBox Size in Meter",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.08
+        }
+    },
+    "actuator_activation_master": {
+        "blade_length": {
+            "display": "Blade Length",
+            "precedence": "local",
+            "type": "float",
+            "value": 0.177
+        },
+        "thin_bb_size_in_m": {
+            "display": "Thin BBox Size in Meter",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.08
+        }
+    },
+    "actuator_activation_right": {
+        "blade_length": {
+            "display": "Blade Length",
+            "precedence": "local",
+            "type": "float",
+            "value": 0.177
+        },
+        "thin_bb_size_in_m": {
+            "display": "Thin BBox Size in Meter",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.08
+        }
+    },
+    "calibration": {
+        "board_pattern": {
+            "display": "Board Pattern",
+            "precedence": "git",
+            "type": "list",
+            "value": [
+                8,
+                6
+            ]
+        },
+        "board_square_size_in_cm": {
+            "display": "Board Square Size (cm)",
+            "precedence": "git",
+            "type": "float",
+            "value": 4
+        }
+    },
+    "cotton_detection_left1": {
+        "conf_threshold": {
+            "display": "Confidence Threshold",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.7
+        },
+        "distance_threshold": {
+            "display": "Distance Threshold",
+            "precedence": "git",
+            "type": "int",
+            "value": 50
+        }
+    },
+    "cotton_detection_left2": {
+        "conf_threshold": {
+            "display": "Confidence Threshold",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.7
+        },
+        "distance_threshold": {
+            "display": "Distance Threshold",
+            "precedence": "git",
+            "type": "int",
+            "value": 50
+        }
+    },
+    "cotton_detection_left3": {
+        "conf_threshold": {
+            "display": "Confidence Threshold",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.7
+        },
+        "distance_threshold": {
+            "display": "Distance Threshold",
+            "precedence": "git",
+            "type": "int",
+            "value": 50
+        }
+    },
+    "cotton_detection_right1": {
+        "conf_threshold": {
+            "display": "Confidence Threshold",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.7
+        },
+        "distance_threshold": {
+            "display": "Distance Threshold",
+            "precedence": "git",
+            "type": "int",
+            "value": 50
+        }
+    },
+    "cotton_detection_right2": {
+        "conf_threshold": {
+            "display": "Confidence Threshold",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.7
+        },
+        "distance_threshold": {
+            "display": "Distance Threshold",
+            "precedence": "git",
+            "type": "int",
+            "value": 50
+        }
+    },
+    "cotton_detection_right3": {
+        "conf_threshold": {
+            "display": "Confidence Threshold",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.7
+        },
+        "distance_threshold": {
+            "display": "Distance Threshold",
+            "precedence": "git",
+            "type": "int",
+            "value": 50
+        }
+    },
+    "cotton_tracking_left1": {
+        "prediction_buffer_pix": {
+            "display": "Prediction Buffer Pix",
+            "precedence": "git",
+            "type": "int",
+            "value": 300
+        },
+        "tracking_frames_length": {
+            "display": "Tracking Frames Length",
+            "precedence": "git",
+            "type": "int",
+            "value": 3
+        }
+    },
+    "cotton_tracking_left2": {
+        "prediction_buffer_pix": {
+            "display": "Prediction Buffer Pix",
+            "precedence": "git",
+            "type": "int",
+            "value": 300
+        },
+        "tracking_frames_length": {
+            "display": "Tracking Frames Length",
+            "precedence": "git",
+            "type": "int",
+            "value": 3
+        }
+    },
+    "cotton_tracking_left3": {
+        "prediction_buffer_pix": {
+            "display": "Prediction Buffer Pix",
+            "precedence": "git",
+            "type": "int",
+            "value": 300
+        },
+        "tracking_frames_length": {
+            "display": "Tracking Frames Length",
+            "precedence": "git",
+            "type": "int",
+            "value": 3
+        }
+    },
+    "cotton_tracking_right1": {
+        "prediction_buffer_pix": {
+            "display": "Prediction Buffer Pix",
+            "precedence": "git",
+            "type": "int",
+            "value": 300
+        },
+        "tracking_frames_length": {
+            "display": "Tracking Frames Length",
+            "precedence": "git",
+            "type": "int",
+            "value": 3
+        }
+    },
+    "cotton_tracking_right2": {
+        "prediction_buffer_pix": {
+            "display": "Prediction Buffer Pix",
+            "precedence": "git",
+            "type": "int",
+            "value": 300
+        },
+        "tracking_frames_length": {
+            "display": "Tracking Frames Length",
+            "precedence": "git",
+            "type": "int",
+            "value": 3
+        }
+    },
+    "cotton_tracking_right3": {
+        "prediction_buffer_pix": {
+            "display": "Prediction Buffer Pix",
+            "precedence": "git",
+            "type": "int",
+            "value": 300
+        },
+        "tracking_frames_length": {
+            "display": "Tracking Frames Length",
+            "precedence": "git",
+            "type": "int",
+            "value": 3
+        }
+    },
+    "detect_weed_left": {
+        "cd_error": {
+            "display": "CD Error",
+            "precedence": "git",
+            "type": "int",
+            "value": 1
+        },
+        "ct_frames_to_consider": {
+            "display": "CT Frames To Consider",
+            "precedence": "git",
+            "type": "int",
+            "value": 3
+        },
+        "fd_frames_to_consider": {
+            "display": "FD Frames To Consider",
+            "precedence": "git",
+            "type": "int",
+            "value": 1
+        },
+        "se_error": {
+            "display": "SE Error",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.01
+        },
+        "spraying_error": {
+            "display": "Spraying Error",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.01
+        }
+    },
+    "detect_weed_right": {
+        "cd_error": {
+            "display": "CD Error",
+            "precedence": "git",
+            "type": "int",
+            "value": 1
+        },
+        "ct_frames_to_consider": {
+            "display": "CT Frames To Consider",
+            "precedence": "git",
+            "type": "int",
+            "value": 3
+        },
+        "fd_frames_to_consider": {
+            "display": "FD Frames To Consider",
+            "precedence": "git",
+            "type": "int",
+            "value": 1
+        },
+        "se_error": {
+            "display": "SE Error",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.01
+        },
+        "spraying_error": {
+            "display": "Spraying Error",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.01
+        }
+    },
+    "implement_actuation": {
+        "ia_buffer": {
+            "display": "Implement Actuation Buffer",
+            "precedence": "local",
+            "type": "float",
+            "value": 0.05
+        },
+        "max_implement_shift": {
+            "display": "Max Implement Shift Allowed From Center",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.2
+        }
+    },
+    "sprayer_activation_node_left": {
+        "cotton_pixelcells_threshold": {
+            "display": "Cotton Pixel Cells Threshold",
+            "precedence": "git",
+            "type": "int",
+            "value": 5
+        },
+        "distance_between_nozzles": {
+            "display": "Distance Between Nozzles",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.03
+        },
+        "minimum_sprayer_delay": {
+            "display": "Minimum Sprayer Delay",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.2
+        },
+        "pipeline_time": {
+            "display": "Pipeline Time",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.4
+        },
+        "slip_time": {
+            "display": "Slip Time",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.2
+        },
+        "speed_worldcoordinates": {
+            "display": "Speed World Coordinates",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.3
+        },
+        "ttf_sa_time": {
+            "display": "TTF SA Time",
+            "precedence": "git",
+            "type": "float",
+            "value": 0.2
+        },
+        "weed_pixelcells_threshold": {
+            "display": "Weed Pixel Cells Threshold",
+            "precedence": "git",
+            "type": "int",
+            "value": 1000
+        }
+    }
+}
