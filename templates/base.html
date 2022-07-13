@@ -94,9 +94,58 @@
             for(let i=0;i<els.length;i++){
                 els[i].value=final_json.ia_buffer;
             }
+            var els=document.getElementsByClassName('cotton pixels');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.cotton_pixelcells_threshold;
+            }
+            var els=document.getElementsByClassName('nozzles');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.distance_between_nozzles;
+            }
+            var els=document.getElementsByClassName('sprayer delay');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.minimum_sprayer_delay;
+            }
+            var els=document.getElementsByClassName('time');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.pipeline_time;
+            }
+            var els=document.getElementsByClassName('slip time');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.slip_time;
+            }
+            var els=document.getElementsByClassName('coordiantes');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.speed_worldcoordinates;
+            }
+            var els=document.getElementsByClassName('sa time');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.ttf_sa_time;
+            }
+            var els=document.getElementsByClassName('weed pixels cells');
+            for(let i=0;i<els.length;i++){
+                els[i].value=final_json.weed_pixelcells_threshold;
+            }
+
         }
         async function save() {
+            let final=[];
+            let forms = document.getElementsByTagName('form');
             
+            for(let i=0;i<forms.length;i++){
+                for(let j=0;j<forms[i].length;j++){
+                    final.push({value:forms[i][j].value});
+                }
+            }
+            
+            await fetch('http://localhost:5000/config', {
+                method: 'POST',
+                headers: {
+                  'Accept': 'application/json',
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(final)
+              });
         }
     </script>
 </body>

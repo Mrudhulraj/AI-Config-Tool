@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request, redirect
 import os
 import json
 app = Flask(__name__)
@@ -14,7 +14,6 @@ def index():
 def getDefault():
     f = open('sample.json')
     data = json.load(f)
-    print(data.keys())
     values = {"blade_length": data["actuator_activation_left"]
               ["blade_length"]["value"],
               "thin_bb_size_in_m": data["actuator_activation_left"]
@@ -45,14 +44,49 @@ def getDefault():
               ["ia_buffer"]["value"],
               "max_implement_shift": data["implement_actuation"]
               ["max_implement_shift"]["value"],
+              "cotton_pixelcells_threshold": data["sprayer_activation_node_left"]
+              ["cotton_pixelcells_threshold"]["value"],
+              "distance_between_nozzles": data["sprayer_activation_node_left"]
+              ["distance_between_nozzles"]["value"],
+              "minimum_sprayer_delay": data["sprayer_activation_node_left"]
+              ["minimum_sprayer_delay"]["value"],
+              "pipeline_time": data["sprayer_activation_node_left"]
+              ["pipeline_time"]["value"],
+              "slip_time": data["sprayer_activation_node_left"]
+              ["slip_time"]["value"],
+              "speed_worldcoordinates": data["sprayer_activation_node_left"]
+              ["speed_worldcoordinates"]["value"],
+              "ttf_sa_time": data["sprayer_activation_node_left"]
+              ["ttf_sa_time"]["value"],
+              "weed_pixelcells_threshold": data["sprayer_activation_node_left"]
+              ["weed_pixelcells_threshold"]["value"],
+
               }
     return values
 
 
-@app.route('/config')
-def getconfig():
-    f = open('sample.json')
-    data = json.load(f)
+@app.route('/config', methods=['POST', 'GET'])
+def handle():
+    if(request.method == 'GET'):
+        try:
+            f = open('sample2.json')
+            data = json.load(f)
+        except:
+            f = open('sample.json')
+            data = json.load(f)
+    else:
+        api_data = request.json
+        c = 0
+        f = open('sample.json')
+        data = json.load(f)
+        for i in data:
+            t1 = data[i]  # dictionary
+            for j in t1:
+                t1[j]['value'] = float(api_data[c]['value'])
+                c += 1
+        json_object = json.dumps(data)
+        with open("sample2.json", "w") as outfile:
+            outfile.write(json_object)
     return data
 
 

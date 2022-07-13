@@ -174,3 +174,19 @@ float: right;
     padding: 0.5rem;
     border-radius: 10px;
 }
+
+.cotton_pixels {
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.cotton_pixels > label {
+    width: 100%;
+    text-align: left;
+}
+
+.cotton_pixels > input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}

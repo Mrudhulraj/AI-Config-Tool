@@ -11,276 +11,276 @@
 
     <button class="accordion">Actuator Activation Left</button>
     <div class="panel">
-        <form id="actuator" class="formData">
+        <form id="actuator1" method="post" class="formData">
             <div class="bladeLength">
                 <label for="length">Blade Length</label>
-                <input type="number" class="Blade Length"> <!--value={{context.value}}-->
+                <input type="number" name="Blade Length Left" class="Blade Length" />
             </div>
             <br>
             <div class="bladeLength">
                 <label for="length">Thin BB Size in metres</label>
-                <input type="float" class="bbsize"> <!--value={{context.value}}-->
+                <input type="float" class="bbsize" name='bb left' />
             </div>
         </form>
     </div>
     <button class="accordion">Actuator Activation Master</button>
     <div class="panel">
-        <form id="actuator" class="formData">
+        <form id="actuator2"  method="post" class="formData">
             <div class="bladeLength">
                 <label for="length">Blade Length</label>
-                <input type="number" class="Blade Length"> <!--value={{context.value}}-->
+                <input type="number" name="Blade Length Master" class="Blade Length">
             </div>
             <br>
             <div class="bladeLength">
                 <label for="length">Thin BB Size in metres</label>
-                <input type="float" class="bbsize"> <!--value={{context.value}}-->
+                <input type="float" class="bbsize" name='bb master'>
             </div>
         </form>
     </div>
     <button class="accordion">Actuator Activation Right</button>
     <div class="panel">
-        <form id="actuator" class="formData">
+        <form id="actuator3" method="post" class="formData">
             <div class="bladeLength">
                 <label for="length">Blade Length</label>
-                <input type="number" class="Blade Length"> <!--value={{context.value}}-->
+                <input type="number" class="Blade Length" name="Blade Length Right"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="bladeLength">
                 <label for="length">Thin BB Size in metres</label>
-                <input type="float" class="bbsize"> <!--value={{context.value}}-->
+                <input type="float" class="bbsize" name='bb right'> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Calibration</button>
     <div class="panel">
-        <form id="calibration" class="formData">
+        <form id="calibration"  method="post" class="formData">
             <div class="boardPattern">
                 <label for="pattern">Board Pattern</label>
-                <input type="float" class="Board Pattern">
+                <input type="float" class="Board Pattern" name="Board Pattern">
             </div>
 
             <br>
 
             <div class="boardSize">
                 <label for="size">Board Size in sq cm</label>
-           <input type="float" class="Board Size">
+           <input type="float" class="Board Size" name="Board Size">
             </div>
 
         </form>
     </div>
     <button class="accordion">Cotton Detection Left 1</button>
     <div class="panel">
-        <form id="detection" class="formData">
+        <form id="detection1" class="formData">
             <div class="detection">
                 <label for="cotton detection">Configuration Threshold</label>
-                <input type="float" class="Conf Threshold"> <!--value={{context.value}}-->
+                <input type="float" class="Conf Threshold" name="CT1"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="detection">
                 <label for="cotton detection">Distance Threshold</label>
-                <input type="float" class="Dist Threshold"> <!--value={{context.value}}-->
+                <input type="float" class="Dist Threshold" name="DT1"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Cotton Detection Left 2</button>
     <div class="panel">
-        <form id="detection" class="formData">
+        <form id="detection2"  method="post" class="formData">
             <div class="detection">
                 <label for="cotton detection">Configuration Threshold</label>
-                <input type="float" class="Conf Threshold"> <!--value={{context.value}}-->
+                <input type="float" class="Conf Threshold" name="CT2"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="detection">
                 <label for="cotton detection">Distance Threshold</label>
-                <input type="float" class="Dist Threshold"> <!--value={{context.value}}-->
+                <input type="float" class="Dist Threshold" name="DT2"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Cotton Detection Left 3</button>
     <div class="panel">
-        <form id="detection" class="formData">
+        <form id="detection3"  method="post" class="formData">
             <div class="detection">
                 <label for="cotton detection">Configuration Threshold</label>
-                <input type="float" class="Conf Threshold"> <!--value={{context.value}}-->
+                <input type="float" class="Conf Threshold" name="CT3"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="detection">
                 <label for="cotton detection">Distance Threshold</label>
-                <input type="float" class="Dist Threshold"> <!--value={{context.value}}-->
+                <input type="float" class="Dist Threshold" name="DT3"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Cotton Detection Right 1</button>
     <div class="panel">
-        <form id="detection" class="formData">
+        <form id="detection4" method="post" class="formData">
             <div class="detection">
                 <label for="cotton detection">Configuration Threshold</label>
-                <input type="float" class="Conf Threshold"> <!--value={{context.value}}-->
+                <input type="float" class="Conf Threshold" name="CT4"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="detection">
                 <label for="cotton detection">Distance Threshold</label>
-                <input type="float" class="Dist Threshold"> <!--value={{context.value}}-->
+                <input type="float" class="Dist Threshold" name="DT4"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Cotton Detection Right 2</button>
     <div class="panel">
-        <form id="detection" class="formData">
+        <form id="detection5" method="post" class="formData">
             <div class="detection">
                 <label for="cotton detection">Configuration Threshold</label>
-                <input type="float" class="Conf Threshold"> <!--value={{context.value}}-->
+                <input type="float" class="Conf Threshold" name="CT5"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="detection">
                 <label for="cotton detection">Distance Threshold</label>
-                <input type="float" class="Dist Threshold"> <!--value={{context.value}}-->
+                <input type="float" class="Dist Threshold" name="DT5"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Cotton Detection Right 3</button>
     <div class="panel">
-        <form id="detection" class="formData">
+        <form id="detection6"  method="post" class="formData">
             <div class="detection">
                 <label for="cotton detection">Configuration Threshold</label>
-                <input type="float" class="Conf Threshold"> <!--value={{context.value}}-->
+                <input type="float" class="Conf Threshold" name="CT6"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="detection">
                 <label for="cotton detection">Distance Threshold</label>
-                <input type="float" class="Dist Threshold"> <!--value={{context.value}}-->
+                <input type="float" class="Dist Threshold" name="DT6"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Cotton Tracking Left 1</button>
     <div class="panel">
-        <form id="tracking" class="formData">
+        <form id="tracking1"  method="post" class="formData">
             <div class="tracking">
                 <label for="cotton tracking">Prediction buffer</label>
-                <input type="int" class="Prediction buffer"> <!--value={{context.value}}-->
+                <input type="int" class="Prediction buffer" name="PB1"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="tracking">
                 <label for="cotton tracking">Tracking Frames Length</label>
-                <input type="int" class="Frames"> <!--value={{context.value}}-->
+                <input type="int" class="Frames" name="TF1"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Cotton Tracking Left 2</button>
     <div class="panel">
-        <form id="tracking" class="formData">
+        <form id="tracking2"  method="post" class="formData">
             <div class="tracking">
                 <label for="cotton tracking">Prediction buffer</label>
-                <input type="int" class="Prediction buffer"> <!--value={{context.value}}-->
+                <input type="int" class="Prediction buffer" name="PB2"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="tracking">
                 <label for="cotton tracking">Tracking Frames Length</label>
-                <input type="int" class="Frames"> <!--value={{context.value}}-->
+                <input type="int" class="Frames" name="TF2"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Cotton Tracking Left 3</button>
     <div class="panel">
-        <form id="tracking" class="formData">
+        <form id="tracking3"  method="post" class="formData">
             <div class="tracking">
                 <label for="cotton tracking">Prediction buffer</label>
-                <input type="int" class="Prediction buffer"> <!--value={{context.value}}-->
+                <input type="int" class="Prediction buffer" name="PB3"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="tracking">
                 <label for="cotton tracking">Tracking Frames Length</label>
-                <input type="int" class="Frames"> <!--value={{context.value}}-->
+                <input type="int" class="Frames" name="TF3"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Cotton Tracking Right 1</button>
     <div class="panel">
-        <form id="tracking" class="formData">
+        <form id="tracking4"  method="post" class="formData">
             <div class="tracking">
                 <label for="cotton tracking">Prediction buffer</label>
-                <input type="int" class="Prediction buffer"> <!--value={{context.value}}-->
+                <input type="int" class="Prediction buffer" name="PB4"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="tracking">
                 <label for="cotton tracking">Tracking Frames Length</label>
-                <input type="int" class="Frames"> <!--value={{context.value}}-->
+                <input type="int" class="Frames" name="TF4"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Cotton Tracking Right 2</button>
     <div class="panel">
-        <form id="tracking" class="formData">
+        <form id="tracking5"  method="post" class="formData">
             <div class="tracking">
                 <label for="cotton tracking">Prediction buffer</label>
-                <input type="int" class="Prediction buffer"> <!--value={{context.value}}-->
+                <input type="int" class="Prediction buffer" name="PB5"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="tracking">
                 <label for="cotton tracking">Tracking Frames Length</label>
-                <input type="int" class="Frames"> <!--value={{context.value}}-->
+                <input type="int" class="Frames" name="TF5"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Cotton Tracking  Right 3</button>
     <div class="panel">
-        <form id="tracking" class="formData">
+        <form id="tracking6"  method="post" class="formData">
             <div class="tracking">
                 <label for="cotton tracking">Prediction buffer</label>
-                <input type="int" class="Prediction buffer"> <!--value={{context.value}}-->
+                <input type="int" class="Prediction buffer" name="PB6"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="tracking">
                 <label for="cotton tracking">Tracking Frames Length</label>
-                <input type="int" class="Frames"> <!--value={{context.value}}-->
+                <input type="int" class="Frames" name="TF6"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Weed Detection Left </button>
     <div class="panel">
-        <form id="weed" class="formData">
+        <form id="weed1"  method="post" class="formData">
             <div class="weed">
                 <label for="weed detect">CD Error</label>
-                <input type="int" class="CD"> <!--value={{context.value}}-->
+                <input type="int" class="CD" name="CDLeft"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="weed">
                 <label for="weed detect">CT frames to detect</label>
-                <input type="int" class="CT"> <!--value={{context.value}}-->
+                <input type="int" class="CT" name="CTLeft"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="weed">
                 <label for="weed detect">FD Frames to Consider</label>
-                <input type="int" class="FD"> <!--value={{context.value}}-->
+                <input type="int" class="FD" name="FDLeft"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="weed">
                 <label for="weed detect">SE Error</label>
-                <input type="int" class="SE"> <!--value={{context.value}}-->
+                <input type="int" class="SE" name="SELeft"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="weed">
                 <label for="weed detect">Spraying Error</label>
-                <input type="int" class="spraying"> <!--value={{context.value}}-->
+                <input type="int" class="spraying" name="SprayLeft"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Weed Detection Right </button>
     <div class="panel">
-        <form id="weed" class="formData">
+        <form id="weed2"  method="post" class="formData">
             <div class="weed">
                 <label for="weed detect">CD Error</label>
-                <input type="int" class="CD"> <!--value={{context.value}}-->
+                <input type="int" class="CD" name="CDRight"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="weed">
                 <label for="weed detect">CT frames to detect</label>
-                <input type="int" class="CT"> <!--value={{context.value}}-->
+                <input type="int" class="CT" name="CTRight"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="weed">
                 <label for="weed detect">FD Frames to Consider</label>
-                <input type="int" class="FD"> <!--value={{context.value}}-->
+                <input type="int" class="FD" name="FDRight"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="weed">
@@ -290,25 +290,68 @@
             <br>
             <div class="weed">
                 <label for="weed detect">Spraying Error</label>
-                <input type="int" class="spraying"> <!--value={{context.value}}-->
+                <input type="int" class="spraying" name="SprayRight"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
     <button class="accordion">Implement Actuation </button>
     <div class="panel">
-        <form id="actuation" class="formData">
+        <form id="actuation1"  method="post" class="formData">
             <div class="actuation">
                 <label for="Actuation Implement">Implement Actuation Buffer</label>
-                <input type="int" class="Actuation Implement"> <!--value={{context.value}}-->
+                <input type="int" class="Actuation Implement" name="Actuation"> <!--value={{context.value}}-->
             </div>
             <br>
             <div class="actuation">
                 <label for="weed detect">Max Implement Shift Allowed Buffer</label>
-                <input type="int" class="Shift"> <!--value={{context.value}}-->
+                <input type="int" class="Shift" name="Shift"> <!--value={{context.value}}-->
             </div>
         </form>
     </div>
-    
+    <button class="accordion">Sprayer Activation Node Left</button>
+    <div class="panel">
+        <form id="cotton pixels"  method="post" class="formData">
+            <div class="cotton_pixels">
+                <label for="cotton pixels">Cotton pixels</label>
+                <input type="int" class="cotton pixels" name="pixels"> <!--value={{context.value}}-->
+            </div>
+            <br>
+            <div class="cotton_pixels">
+                <label for="nozzles">Distance Between Nozzles</label>
+                <input type="int" class="nozzles" name="nozzles"> <!--value={{context.value}}-->
+            </div>
+            <br>
+            <div class="cotton_pixels">
+                <label for="sprayer delay">Minimum Sprayer delay</label>
+                <input type="int" class="sprayer delay" name="sprayer delay"> <!--value={{context.value}}-->
+            </div>
+            <br>
+            <div class="cotton_pixels">
+                <label for="time">Pipeline time</label>
+                <input type="int" class="time" name="time"> <!--value={{context.value}}-->
+            </div>
+            <br>
+            <div class="cotton_pixels">
+                <label for="slip time">Slip Time</label>
+                <input type="int" class="slip time" name="slip time"> <!--value={{context.value}}-->
+            </div>
+            <br>
+            <div class="cotton_pixels">
+                <label for="coordinates">Speed World Coordinates</label>
+                <input type="int" class="coordiantes" name="coordinates"> <!--value={{context.value}}-->
+            </div>
+            <br>
+            <div class="cotton_pixels">
+                <label for="sa time">TTF SA Time</label>
+                <input type="int" class="sa time" name="sa time"> <!--value={{context.value}}-->
+            </div>
+            <br>
+            <div class="cotton_pixels">
+                <label for="weed pixels cells">Weed Pixel Cells Threshold</label>
+                <input type="int" class="weed pixels cells" name="weed pixels cells"> <!--value={{context.value}}-->
+            </div>
+        </form>
+    </div>
     <button class="reset" onclick="reset()">Reset</button>
-    <button class="save">Save</button>
+    <button class="save" type="button" onclick="save()">Save</button>
 {%endblock%}
